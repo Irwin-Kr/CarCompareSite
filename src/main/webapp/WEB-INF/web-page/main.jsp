@@ -1,10 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8" %>
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Main</title>
-	</head>
-	<body>
-		메인페이지
-	</body>
-</html>
+<%@ taglib prefix="tagM" tagdir="/WEB-INF/tags/layout" %>
+<tagM:main>
+	<h1>본문</h1>
+</tagM:main>
