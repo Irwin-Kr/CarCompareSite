@@ -13,10 +13,10 @@
 
 4. 사용한 개발 언어<br><br>
    <img src="https://img.shields.io/badge/JAVA-007396?style=plastic&logo=coffeescript&logoColor=white">
-   <!-- 현재 Oracle측 변호사로부터 메일 회신 후 제거됨 https://github.com/simple-icons/simple-icons/issues/7374 -->
    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=white"/>
    <img src="https://img.shields.io/badge/HTML5-E34F26?style=plastic&logo=HTML5&logoColor=white" />
-   <img src="https://img.shields.io/badge/CSS3-1572B6?style=plastic&logo=CSS3&logoColor=white" /><br><br>
+   <img src="https://img.shields.io/badge/CSS3-1572B6?style=plastic&logo=CSS3&logoColor=white" />
+   <!-- 현재 Oracle측 변호사로부터 메일 회신 후 제거됨 https://github.com/simple-icons/simple-icons/issues/7374 --><br><br>
 
 5. 사용한 데이터베이스<br><br>
    <img src="https://img.shields.io/badge/MySQL-4479A1?style=plastic&logo=mysql&logoColor=white" /><br><br>
