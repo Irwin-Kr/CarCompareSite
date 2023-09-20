@@ -6,8 +6,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<!--  <link rel="stylesheet" type="text/css"  href="<c:url value='/common/css/common.css'/>" />
-		<script src="<c:url value='/common/js/common.js'/>"></script>
+		<link rel="stylesheet" type="text/css" href="<c:url value='/common/common.css' />" />
+		<!-- <script src="<c:url value='/common/js/common.js'/>"></script>
 		-->
 	</head>
 	<body>
