@@ -14,6 +14,15 @@
 				<a href="https://www.google.com">회원가입</a>
 			</div>
 		</section>
+		<section>
+			<nav id="search_nav">
+				<ul>
+					<li>차종별</li>
+					<li>제조사별</li>
+					<li>유종별</li>
+				</ul>
+			</nav>
+		</section>
 	</jsp:attribute>
 	<jsp:attribute name="footer">
 		COPYRIGHT 
