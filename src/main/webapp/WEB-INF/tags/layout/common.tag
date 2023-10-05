@@ -17,8 +17,7 @@
 			</c:forEach>
 		</c:if>
 		<!-- JavaScript 관련 -->
-		<!-- <script src="<c:url value='/common/js/common.js'/>"></script>
-		-->
+		<script src="<c:url value='/common/common.js'/>"></script>
 		<c:if test="${ !empty addJs}">
 			<c:forEach var="js" items="${ addJs }">
 				<script src="<c:url value='/js/${js}.js' />"></script>

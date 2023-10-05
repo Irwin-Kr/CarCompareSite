@@ -15,12 +15,18 @@
 				</div>
 				<!-- 회원의 경우 -->
 			</section>
-			<section>
-				<nav id="search_nav">
-					<ul>
-						<li>차종별</li>
-						<li>제조사별</li>
-						<li>유종별</li>
+			<section >
+				<nav>
+					<ul id="search_nav">
+						<li class="search_nav_li">
+							<a href="naver.com">차종별</a>
+						</li>
+						<li class="search_nav_li">
+							<a href="naver.com">제조사별</a>
+						</li>
+						<li class="search_nav_li">
+							<a href="naver.com">유종별</a>
+						</li>
 					</ul>
 				</nav>
 			</section>
