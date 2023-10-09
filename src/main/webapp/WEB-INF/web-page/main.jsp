@@ -6,7 +6,7 @@
 	<div id="search_box">
 		<div id="search">
 			<input type="text" id="search_text" />
-			<button class="xi-search"></button>
+			<button class="xi-search xi-2x"></button>
 		</div>
 	</div>
 
@@ -17,14 +17,16 @@
 		<img class="slider-img" src="<c:url value='/images/Car/qm6_banner.jpg'/>" />
 		<img class="slider-img" src="<c:url value='images/Car/tivoli_visualbg2004.jpg'/>" />
 		<div id="btns">
-			<button class="xi-angle-left" onclick="plusDivs(-1)"></button>
+			<button class="xi-angle-left xi-3x" onclick="plusDivs(-1)"></button>
 			<section id="sel_btns">
 				<div id="num_btns">
-					<button class="xi-radiobox-blank" ></button>
-					<button class="xi-full-moon" ></button>
+					<button class="xi-full-moon xi-1x" ></button>
+					<button class="xi-radiobox-blank xi-1x" ></button>
+					<button class="xi-radiobox-blank xi-1x" ></button>
+					<button class="xi-radiobox-blank xi-1x" ></button>
 				</div>
 			</section>
-			<button class="xi-angle-right" onclick="plusDivs(1)"></button>
+			<button class="xi-angle-right xi-3x" onclick="plusDivs(1)"></button>
 		</div>
 	</div>
 	<h1>본문</h1>

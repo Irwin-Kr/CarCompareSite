@@ -38,7 +38,7 @@ function plusDivs(n){
 
 function showDivs(n){
 	var btnsEl = document.getElementById("btns");
-	
+	var numBtnsEL = document.getElementById("num_btns");
 	
 	if( n > sliderImageEl.length ) {
 		slideIndex = 1;
@@ -49,8 +49,10 @@ function showDivs(n){
 	
 	for(var i=0; i<sliderImageEl.length; i++){
 		sliderImageEl[i].style.display = "none";
+		numBtnsEL.children[i].className = "xi-full-moon xi-1x";
 	}
 	sliderImageEl[slideIndex-1].style.display="block";
+	numBtnsEL.children[slideIndex-1].className = "xi-radiobox-blank xi-1x";
 	var bannerIH = sliderImageEl[slideIndex-1].height+'px';
 	var bannerIW = sliderImageEl[slideIndex-1].width+'px';
 	var selH = document.getElementById("sel_btns");

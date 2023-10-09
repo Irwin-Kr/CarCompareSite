@@ -1,15 +1,18 @@
 * {margin: 0; padding: 0; font-size: 13px;  }
 
+input[type=text] { outline:none; font-size: 1.8rem; }
+input::placeholder { font-size: 13px; }
 a { text-decoration: none; color: inherit; }
 button { background-color:  #11ffee00; border: none; }
 
 .top_nav { background-color: #DAD1BF ; width:100%; height: 45px; display:flex; flex:1; margin: auto 2px; }
 .top_nav > div { display: flex; width: calc(100%/3); align-items: center; }
-#menu { justify-content: start; margin-left: 5px; border: 1px solid black; }
-#logo { justify-content: center; }
+#menu { justify-content: start; margin-left: 10px; border: 1px solid black; }
+#logo { display: flex; width: calc(100%/3); align-items: center; justify-content: center;}
 #logo > img {height: 45px;}
 
-#account { justify-content: end; height:30px;  margin-right: 5px; text-align: center; }
+#account { justify-content: end;  margin-right: 5px; text-align: center; }
+#account:last-child { margin-right: 20px;}
 
 #search_nav { height: 20px; width: 100%; display:flex; margin: 0 auto; text-align: center; }
 .search_nav_li { flex: 1; list-style-type: none; }

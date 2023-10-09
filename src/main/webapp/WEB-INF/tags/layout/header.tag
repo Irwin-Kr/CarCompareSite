@@ -5,13 +5,14 @@
 			<section class="top_nav">
 				<div id="menu">
 				</div>
-				<div id="logo">
+				<a href="/CarCompareSite" id="logo">
 					<img src="<c:url value='/images/mangoCar.png'/>" />
-				</div>
+				</a>
 				<!-- 비회원의 경우 -->
 				<div id="account">
 					<a href="https://www.naver.com">로그인</a>
-					<a href="https://www.google.com">회원가입</a>
+					<div class="xi-minus xi-rotate-90" ></div>
+					<a href="/CarCompareSite/register">회원가입</a>
 				</div>
 				<!-- 회원의 경우 -->
 			</section>

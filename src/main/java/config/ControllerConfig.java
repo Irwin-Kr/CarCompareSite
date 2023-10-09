@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import controller.MainController;
+import controller.account.RegisterController;
 
 @Configuration
 public class ControllerConfig {
@@ -13,5 +14,9 @@ public class ControllerConfig {
 		return new MainController();
 	}
 	
+	@Bean
+	public RegisterController registerController() {
+		return new RegisterController();
+	}
 	
 }
