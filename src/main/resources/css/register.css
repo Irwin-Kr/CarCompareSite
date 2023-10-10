@@ -1,2 +1,8 @@
+#form_box { display: flex;}
+
+.box { margin:0 auto; display: flex; align-items: center; }
+.box > input { height: 37px; }
+.box > label { display:contents; text-align: center; font-size: 1.4rem; height: 41px;}
+.box > button { width: 120px; height: 41px;}
 
 #CheckForDuplicateId { border: 1px solid; }

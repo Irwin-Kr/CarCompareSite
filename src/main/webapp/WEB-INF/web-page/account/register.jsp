@@ -4,11 +4,11 @@
 
 <layout:common>
 	<h3>회원가입</h3>
-	<form>
+	<form id="form_box">
 		<div class="box">
-			<label for="id">아이디 : </label>
+			<label for="id">아이디</label>
 			<input type="text" name="id" id="id" placeholder="아이디를 입력해주세요." />
-			<button id="CheckForDuplicateId">중복확인</button>
+			<button id="CheckForDuplicateId"  >중복확인</button>
 		</div>
 	</form>
 </layout:common>

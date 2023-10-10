@@ -1,6 +1,6 @@
 * {margin: 0; padding: 0; font-size: 13px;  }
 
-input[type=text] { outline:none; font-size: 1.8rem; }
+input[type=text] { outline:none; font-size: 1.8rem; padding-block: 0; padding-inline: 0; }
 input::placeholder { font-size: 13px; }
 a { text-decoration: none; color: inherit; }
 button { background-color:  #11ffee00; border: none; }
