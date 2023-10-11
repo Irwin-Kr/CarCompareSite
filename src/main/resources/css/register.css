@@ -1,8 +1,6 @@
-#form_box { display: flex;}
-
-.box { margin:0 auto; display: flex; align-items: center; }
-.box > input { height: 37px; }
-.box > label { display:contents; text-align: center; font-size: 1.4rem; height: 41px;}
+.box { margin:0 auto; display: flex; align-items: center; justify-content: center; width: 100%; }
+.box > input { height: 37px;  margin-left: 3%; margin-right: 1%; text-align: center; width: 245px; }
+.box > label { display:contents; font-size: 1.2rem; height: 41px;}
 .box > button { width: 120px; height: 41px;}
 
 #CheckForDuplicateId { border: 1px solid; }
