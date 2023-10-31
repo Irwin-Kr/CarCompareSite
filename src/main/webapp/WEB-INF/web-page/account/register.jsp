@@ -15,33 +15,36 @@
 			<div class="box">
 				<label for="pw">비밀번호</label>
 				<input type="password" name="pw" id="pw" placeholder="비밀번호를 입력해주세요." />
-				<button></button>
+				<article></article>
 			</div>
 			<div class="box">
 				<label for="pw">비밀번호 확인</label>
 				<input type="password" name="pwCheck" id="pwCheck" placeholder="비밀번호를 다시 입력해주세요." />
-				<button></button>
+				<article></article>
 			</div>
 			<div class="box">
 				<label for="name">이름</label>
 				<input type="text" name="name" id="name" placeholder="이름을 입력해주세요." />
-				<button></button>
+				<article></article>
 			</div>
 			<div class="box">
 				<label for="email">이메일</label>
 				<input type="email" name="email" id="email" placeholder="이메일을 입력해주세요." />
-				<button></button>
+				<article></article>
 			</div>
 			<div class="box">
 				<label for="phone">연락처</label>
 				<input type="text" name="phone" id="phone" placeholder="연락처를 입력해주세요." />
-				<button></button>
+				<article></article>
 			</div>
 			<div class="box">
 				<label for="birthday">생년월일</label>
 				<input type="date" name="birthday" id="birthday" placeholder="비밀번호를 다시 입력해주세요." />
-				<button></button>
+				<article></article>
 			</div>
 		</form>
+		<div id="regist">
+			<button type="submit">회원 가입</button>
+		</div>
 	</div>
 </layout:common>
