@@ -1,0 +1,18 @@
+CREATE TABLE `carcomparesite`.`account` (
+  `no` INT NOT NULL AUTO_INCREMENT COMMENT 'Account No',
+  `id` VARCHAR(20) NOT NULL,
+  `pw` VARCHAR(20) NOT NULL,
+  `first_name` VARCHAR(20) NOT NULL,
+  `last_name` VARCHAR(20) NOT NULL,
+  `nick_name` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(40) NOT NULL,
+  `mobile` VARCHAR(20) NOT NULL,
+  `address` VARCHAR(45) NULL,
+  `birthday` DATE NULL,
+  `grants` ENUM('admin', 'manager', 'user') NOT NULL DEFAULT 'user',
+  `regDt` DATETIME NOT NULL,
+  `modDt` DATETIME NOT NULL,
+  PRIMARY KEY (`no`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
+  UNIQUE INDEX `mobile_UNIQUE` (`mobile` ASC) VISIBLE,
+  UNIQUE INDEX `nick_name_UNIQUE` (`nick_name` ASC) VISIBLE);
