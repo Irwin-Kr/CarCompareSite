@@ -6,7 +6,7 @@
 	<div id="register_box">
 		<p style="text-align: center; font-weight: bold; font-size: 2.5rem; margin-top: 30px;">회원가입<p>
 		<hr style="margin: 3% auto; width: 90%; padding: border: solid 3px orange;" />
-		<form id="form_box">
+		<form id="form_box" action="/regist" method="post">
 			<div class="box">
 				<label for="id">아이디</label>
 				<input type="text" name="id" id="id" placeholder="아이디를 입력해주세요." />
@@ -19,7 +19,7 @@
 			</div>
 			<div class="box">
 				<label for="pw">비밀번호 확인</label>
-				<input type="password" name="pwCheck" id="pwCheck" placeholder="비밀번호를 다시 입력해주세요." />
+				<input type="password" placeholder="비밀번호를 다시 입력해주세요." />
 				<article></article>
 			</div>
 			<div class="box">

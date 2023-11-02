@@ -16,7 +16,7 @@ public class RegisterController {
 		return "account/register";
 	}
 
-	@PostMapping("/register")
+	@PostMapping("/regist")
 	public String registUser() {
 		
 		return "/login";

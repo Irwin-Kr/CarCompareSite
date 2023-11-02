@@ -76,6 +76,19 @@ public class AccountDto {
 	public void setModDt(LocalDateTime modDt) {
 		this.modDt = modDt;
 	}
+	
+	public AccountDto(long no, String id, String pw, String name, String email, String mobile, LocalDate birthday, LocalDateTime regDt, LocalDateTime modDt) {
+		super();
+		this.no = no;
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+		this.email = email;
+		this.mobile = mobile;
+		this.birthday = birthday;
+		this.regDt = regDt;
+		this.modDt = modDt;
+	}
 	@Override
 	public String toString() {
 		return "AccountDto [no=" + no + ", id=" + id + ", pw=" + pw + ", name=" + name + ", email=" + email
