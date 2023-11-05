@@ -23,8 +23,18 @@
 				<article></article>
 			</div>
 			<div class="box">
-				<label for="name">이름</label>
-				<input type="text" name="name" id="name" placeholder="이름을 입력해주세요." />
+				<label for="last_name">이름</label>
+				<input type="text" name="last_name" id="last_name" placeholder="이름을 입력해주세요." />
+				<article></article>
+			</div>
+			<div class="box">
+				<label for="first_name">성</label>
+				<input type="text" name="first_name" id="first_name" placeholder="성을 입력해주세요." />
+				<article></article>
+			</div>
+			<div class="box">
+				<label for="nick_name">닉네임</label>
+				<input type="text" name="nick_name" id="nick_name" placeholder="닉네임을 입력해주세요." />
 				<article></article>
 			</div>
 			<div class="box">

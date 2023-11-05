@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="AccountMapper">
+
+<resultMap id="accountMap" type="account.AccountDto">
+	<result property="no" column="no" />
+	<result property="id" column="id" />
+	<result property="accountPw" column="accountPw" />
+	<result property="first_name" column="first_name" />
+	<result property="last_name" column="last_name" />
+	<result property="nick_name" column="nick_name" />
+	<result property="email" column="email" />
+	<result property="mobile" column="mobile" />
+	<result property="address" column="address" />
+	<result property="birthday" column="birthday" />
+	<result property="grant" column="grant" />
+	<result property="regDt" column="regDt" />
+	<result property="modDt" column="modDt" />
+</resultMap>
+
+<insert id="regist" parameterType="account.AccountDto"  useGeneratedKeys="true" keyProperty="no">
+	INSERT INTO Account(id, accountPw, firstName, lastName, nickName, email, mobile, address, birthday )
+	VALUES(#{id}, #{accountPw}, #{first_name}, #{last_name}, #{nick_name}, #{email}, #{mobile}, #{address}, #{birthday});
+</insert>
+
+</mapper>

@@ -7,15 +7,17 @@ public class AccountDto {
 
 	private long no;
 	private String id;
-	private String pw;
-	private String name;
+	private String accountPw;
+	private String first_name;
+	private String last_name;
+	private String nick_name;
 	private String email;
 	private String mobile;
 	private LocalDate birthday;
+	private String Address;
 	private Grant grant;
 	private LocalDateTime regDt;
 	private LocalDateTime modDt;
-	
 	public long getNo() {
 		return no;
 	}
@@ -28,17 +30,29 @@ public class AccountDto {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getPw() {
-		return pw;
+	public String getAccountPw() {
+		return accountPw;
 	}
-	public void setPw(String pw) {
-		this.pw = pw;
+	public void setAccountPw(String accountPw) {
+		this.accountPw = accountPw;
 	}
-	public String getName() {
-		return name;
+	public String getFirst_name() {
+		return first_name;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setFirst_name(String first_name) {
+		this.first_name = first_name;
+	}
+	public String getLast_name() {
+		return last_name;
+	}
+	public void setLast_name(String last_name) {
+		this.last_name = last_name;
+	}
+	public String getNick_name() {
+		return nick_name;
+	}
+	public void setNick_name(String nick_name) {
+		this.nick_name = nick_name;
 	}
 	public String getEmail() {
 		return email;
@@ -58,6 +72,12 @@ public class AccountDto {
 	public void setBirthday(LocalDate birthday) {
 		this.birthday = birthday;
 	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
+	}
 	public Grant getGrant() {
 		return grant;
 	}
@@ -76,25 +96,14 @@ public class AccountDto {
 	public void setModDt(LocalDateTime modDt) {
 		this.modDt = modDt;
 	}
-	
-	public AccountDto(long no, String id, String pw, String name, String email, String mobile, LocalDate birthday, LocalDateTime regDt, LocalDateTime modDt) {
-		super();
-		this.no = no;
-		this.id = id;
-		this.pw = pw;
-		this.name = name;
-		this.email = email;
-		this.mobile = mobile;
-		this.birthday = birthday;
-		this.regDt = regDt;
-		this.modDt = modDt;
-	}
 	@Override
 	public String toString() {
-		return "AccountDto [no=" + no + ", id=" + id + ", pw=" + pw + ", name=" + name + ", email=" + email
-				+ ", mobile=" + mobile + ", birthday=" + birthday + ", grant=" + grant + ", regDt=" + regDt + ", modDt="
-				+ modDt + "]";
+		return "AccountDto [no=" + no + ", id=" + id + ", accountPw=" + accountPw + ", first_name=" + first_name
+				+ ", last_name=" + last_name + ", nick_name=" + nick_name + ", email=" + email + ", mobile=" + mobile
+				+ ", birthday=" + birthday + ", Address=" + Address + ", grant=" + grant + ", regDt=" + regDt
+				+ ", modDt=" + modDt + "]";
 	}
+	
 	
 	
 }
