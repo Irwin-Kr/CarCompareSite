@@ -3,7 +3,7 @@ package account;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public class AccountEntity {
+public class Account {
 	
 	private long no;
 	private String id;

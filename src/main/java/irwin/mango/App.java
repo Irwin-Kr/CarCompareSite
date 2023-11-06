@@ -22,8 +22,7 @@ public class App
     	AccountDto account = new AccountDto();
         account.setId("test");
         account.setAccountPw("qwe123!@");
-        account.setFirst_name("test");
-        account.setLast_name("kim");
+        account.setName("test");
         account.setNick_name("Tester");
         account.setEmail("test@test.org");
         account.setMobile("00000000");
@@ -35,6 +34,13 @@ public class App
         System.out.printf("%d개 저장\n", affectedRows);
         
         System.out.printf("회원 번호 : "+account.getNo());
+        
+        AccountDto account2 = new AccountDto();
+        account2.setAccountPw("1q2w3e!Q@W#E");
+        
+        int affectedRows2 = sqlSession.update("AccountMapper.update", account);
+        
+        System.out.printf("%d개 수정\n", affectedRows2);
         
         sqlSession.commit();
         sqlSession.close();

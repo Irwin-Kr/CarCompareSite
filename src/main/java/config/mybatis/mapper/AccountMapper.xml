@@ -7,8 +7,7 @@
 	<result property="no" column="no" />
 	<result property="id" column="id" />
 	<result property="accountPw" column="accountPw" />
-	<result property="first_name" column="first_name" />
-	<result property="last_name" column="last_name" />
+	<result property="name" column="name" />
 	<result property="nick_name" column="nick_name" />
 	<result property="email" column="email" />
 	<result property="mobile" column="mobile" />
@@ -19,9 +18,23 @@
 	<result property="modDt" column="modDt" />
 </resultMap>
 
+<select id="searchId"  parameterType="account.AccountDto" resultMap="accountMap">
+	SELECT * FROM Account WHERE id=#{id};
+</select>
+
+
+
 <insert id="regist" parameterType="account.AccountDto"  useGeneratedKeys="true" keyProperty="no">
-	INSERT INTO Account(id, accountPw, firstName, lastName, nickName, email, mobile, address, birthday )
-	VALUES(#{id}, #{accountPw}, #{first_name}, #{last_name}, #{nick_name}, #{email}, #{mobile}, #{address}, #{birthday});
+	INSERT INTO Account(id, accountPw, name, nickName, email, mobile, address, birthday )
+	VALUES(#{id}, #{accountPw}, #{name}, #{nick_name}, #{email}, #{mobile}, #{address}, #{birthday});
 </insert>
+
+<delete id="delete" parameterType="account.AccountDto">
+	DELETE FROM Account WHERE id=#{id};
+</delete>
+
+<update id="update" parameterType="account.AccountDto">
+	UPDATE Account SET accountPw=#{accountPw}, email=#{email}, mobile=#{mobile}, modDt=now();
+</update>
 
 </mapper>

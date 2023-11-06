@@ -6,13 +6,12 @@ import java.time.LocalDateTime;
 public class AccountDto {
 
 	private long no;
-	private String id;
+	private String id; // UNIQUE
 	private String accountPw;
-	private String first_name;
-	private String last_name;
-	private String nick_name;
-	private String email;
-	private String mobile;
+	private String name;
+	private String nick_name; // UNIQUE
+	private String email; // UNIQUE
+	private String mobile; // UNIQUE
 	private LocalDate birthday;
 	private String Address;
 	private Grant grant;
@@ -36,17 +35,11 @@ public class AccountDto {
 	public void setAccountPw(String accountPw) {
 		this.accountPw = accountPw;
 	}
-	public String getFirst_name() {
-		return first_name;
+	public String getName() {
+		return name;
 	}
-	public void setFirst_name(String first_name) {
-		this.first_name = first_name;
-	}
-	public String getLast_name() {
-		return last_name;
-	}
-	public void setLast_name(String last_name) {
-		this.last_name = last_name;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getNick_name() {
 		return nick_name;
@@ -98,12 +91,9 @@ public class AccountDto {
 	}
 	@Override
 	public String toString() {
-		return "AccountDto [no=" + no + ", id=" + id + ", accountPw=" + accountPw + ", first_name=" + first_name
-				+ ", last_name=" + last_name + ", nick_name=" + nick_name + ", email=" + email + ", mobile=" + mobile
-				+ ", birthday=" + birthday + ", Address=" + Address + ", grant=" + grant + ", regDt=" + regDt
-				+ ", modDt=" + modDt + "]";
+		return "AccountDto [no=" + no + ", id=" + id + ", accountPw=" + accountPw + ", name=" + name + ", nick_name="
+				+ nick_name + ", email=" + email + ", mobile=" + mobile + ", birthday=" + birthday + ", Address="
+				+ Address + ", grant=" + grant + ", regDt=" + regDt + ", modDt=" + modDt + "]";
 	}
-	
-	
-	
+
 }

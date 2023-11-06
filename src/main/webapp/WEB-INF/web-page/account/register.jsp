@@ -23,13 +23,8 @@
 				<article></article>
 			</div>
 			<div class="box">
-				<label for="last_name">이름</label>
-				<input type="text" name="last_name" id="last_name" placeholder="이름을 입력해주세요." />
-				<article></article>
-			</div>
-			<div class="box">
-				<label for="first_name">성</label>
-				<input type="text" name="first_name" id="first_name" placeholder="성을 입력해주세요." />
+				<label for="name">이름</label>
+				<input type="text" name="name" id="name" placeholder="이름을 입력해주세요." />
 				<article></article>
 			</div>
 			<div class="box">
@@ -49,7 +44,7 @@
 			</div>
 			<div class="box">
 				<label for="birthday">생년월일</label>
-				<input type="date" name="birthday" id="birthday" placeholder="비밀번호를 다시 입력해주세요." />
+				<input type="date" name="birthday" id="birthday" placeholder="생년월일을 입력해주세요." />
 				<article></article>
 			</div>
 		</form>
