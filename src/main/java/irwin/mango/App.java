@@ -2,10 +2,12 @@ package irwin.mango;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.regex.Pattern;
 
 import org.apache.ibatis.session.SqlSession;
 
 import account.AccountDto;
+import config.CustomException;
 import config.MybatisConnection;
 
 /**
@@ -16,7 +18,7 @@ public class App
 {
     public static void main( String[] args )
     {
-    	
+    	/*
     	SqlSession sqlSession = MybatisConnection.getSqlSession();
     	
     	AccountDto account = new AccountDto();
@@ -44,7 +46,12 @@ public class App
         
         sqlSession.commit();
         sqlSession.close();
-        
-        
+        */
+    	
+    	String email = "test@test.org";
+    	
+    	boolean test = Pattern.matches("\\w+@\\w.\\w+(\\.\\w+)?", email);
+    	System.out.println(test);
+
     }
 }

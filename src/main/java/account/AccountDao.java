@@ -45,10 +45,10 @@ public class AccountDao {
 		int count = sqlSession.selectOne("AccountMapper.searchId", account);
 		if(count>0) {
 			System.out.println("중복된 아이디가 있습니다.");
-			return false;
+			return true;
 		}else {
 			System.out.println("중복된 아이디가 없습니다.");
-			return true;
+			return false;
 		}
 	}
 	
