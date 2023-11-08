@@ -2,6 +2,7 @@ package account;
 
 import org.apache.ibatis.session.SqlSession;
 
+import config.CustomException;
 import config.MybatisConnection;
 
 public class AccountDao {
@@ -12,7 +13,10 @@ public class AccountDao {
 	public AccountDto register(AccountDto account) {
 		try {
 			SqlSession sqlSession = MybatisConnection.getSqlSession();
-			sqlSession.insert("AccountMapper.regist", account);
+			int result = sqlSession.insert("AccountMapper.regist", account);
+			if(result <= 0) {
+				throw new CustomException("회원 등록에 실패하였습니다.");
+			}
 			sqlSession.commit();
 			sqlSession.close();
 			
@@ -42,8 +46,8 @@ public class AccountDao {
 		SqlSession sqlSession = MybatisConnection.getSqlSession();
 		AccountDto account = new AccountDto();
 		account.setId(id);
-		int count = sqlSession.selectOne("AccountMapper.searchId", account);
-		if(count>0) {
+		int result = sqlSession.selectOne("AccountMapper.searchId", account);
+		if(result>0) {
 			System.out.println("중복된 아이디가 있습니다.");
 			return true;
 		}else {

@@ -46,12 +46,32 @@ public class App
         
         sqlSession.commit();
         sqlSession.close();
-        */
+        
     	
     	String email = "test@test.org";
     	
     	boolean test = Pattern.matches("\\w+@\\w.\\w+(\\.\\w+)?", email);
     	System.out.println(test);
-
+    	 */
+    	
+    	//String id = "123";
+    	//String pw = "qWQWEQWE1";
+    	String pw2 = "1q2w3e !Q@W#E";
+    	String pw3 = "1q2w3e !Q@W#E";
+    	String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z])(?=.*\\d)(?=.*\\W)(?=.*\\S).{8,20}$";
+    	String regex2 = "^(?=.*\\s).$";
+    	
+    	
+    	//boolean test = Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z])(?=.*\\d)(?=.*\\W).{8,20}$", pw);
+    	boolean test2 = Pattern.matches(regex, pw2);
+    	//System.out.println(test);
+    	System.out.println(pw2);
+    	System.out.println(regex);
+    	System.out.println(test2+"\n\n\n");
+    	System.out.println(Pattern.matches(regex2, pw3));
+    	
+    	
+    	//System.out.println(pw.contains(id));
+    	
     }
 }

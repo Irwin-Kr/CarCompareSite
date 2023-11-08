@@ -19,7 +19,7 @@
 			</div>
 			<div class="box">
 				<label for="pw">비밀번호 확인</label>
-				<input type="password" placeholder="비밀번호를 다시 입력해주세요." />
+				<input type="password" name="checkPw" id="checkPw"  placeholder="비밀번호를 다시 입력해주세요." />
 				<article></article>
 			</div>
 			<div class="box">

@@ -11,7 +11,7 @@ public class AccountDto {
 	private String name;
 	private String nick_name; // UNIQUE
 	private String email; // UNIQUE
-	private String mobile; // UNIQUE
+	private String phone; // UNIQUE
 	private LocalDate birthday;
 	private String Address;
 	private Grant grant;
@@ -53,11 +53,11 @@ public class AccountDto {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getMobile() {
-		return mobile;
+	public String getPhone() {
+		return phone;
 	}
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 	public LocalDate getBirthday() {
 		return birthday;
@@ -92,7 +92,7 @@ public class AccountDto {
 	@Override
 	public String toString() {
 		return "AccountDto [no=" + no + ", id=" + id + ", accountPw=" + accountPw + ", name=" + name + ", nick_name="
-				+ nick_name + ", email=" + email + ", mobile=" + mobile + ", birthday=" + birthday + ", Address="
+				+ nick_name + ", email=" + email + ", phone=" + phone + ", birthday=" + birthday + ", Address="
 				+ Address + ", grant=" + grant + ", regDt=" + regDt + ", modDt=" + modDt + "]";
 	}
 
